@@ -22,7 +22,7 @@ public class UsuarioController {
     @Autowired
     private UsuarioRepo userRepo;
 
-    @GetMapping //l Listar os usuarios
+    @GetMapping //Listar os usuarios
     public List<Usuario> findAll(){
         return userRepo.findAll();
     }
@@ -40,7 +40,27 @@ public class UsuarioController {
     @DeleteMapping
     public String delete(@RequestBody Usuario usuarioDeletar){
         userRepo.delete(usuarioDeletar);
-        return "Usuário deletado com sucesso!";
-        
+        return "Usuário deletado com sucesso!";    
     }
+    
+    /*
+    Usando cliente Thunder:
+    localhost:8080/users
+
+    Vá para as abas "Body" e sub-aba "Json"
+    Body > Json
+
+    Corpo para testes(Modelo):
+    {
+      "id": 1,
+      "name": "Rafael Vieira",
+      "cpf": "0123456789",
+      "identidade": "1111111",
+      "orgaoEmissor": "SDSPE",
+      "telefone": "55-81-99999-8888",
+      "dataNascimento": "01/04/1980",
+      "email": "rafaelvieira@google.com"    
+    }
+
+    */
 }

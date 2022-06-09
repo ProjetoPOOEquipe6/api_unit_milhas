@@ -17,7 +17,7 @@ public class Usuario {
     private String email;
 
     public Usuario(){
-
+        //Construtor vazio
     }
 
     public Usuario(Long id, String name, String cpf, String identidade, String orgaoEmissor, String telefone,
@@ -98,6 +98,5 @@ public class Usuario {
 
     public void setEmail(String email) {
         this.email = email;
-    }    
-
+    }   
 }
