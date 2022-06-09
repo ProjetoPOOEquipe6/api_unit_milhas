@@ -54,8 +54,8 @@ public class AeronaveController {
     Corpo para testes(Modelo):
     {
         "prefixo": "PT-101",
-        "fabricante": "Embraer;
-        "modelo": "195";
-        "nPassageiros": 146;
+        "fabricante": "Embraer",
+        "modelo": "195",
+        "nPassageiros": 200
     }
  */
