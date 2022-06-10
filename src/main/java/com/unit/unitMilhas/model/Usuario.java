@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Usuario {
     private Long id;
     //@NotBlank
-    private String name;
+    private String nome;
     private String cpf;
     private String identidade;
     private String orgaoEmissor;
@@ -20,10 +20,10 @@ public class Usuario {
         //Construtor vazio
     }
 
-    public Usuario(Long id, String name, String cpf, String identidade, String orgaoEmissor, String telefone,
+    public Usuario(Long id, String nome, String cpf, String identidade, String orgaoEmissor, String telefone,
             String dataNascimento, String email) {
         this.id = id;
-        this.name = name;
+        this.nome = nome;
         this.cpf = cpf;
         this.identidade = identidade;
         this.orgaoEmissor = orgaoEmissor;
@@ -44,12 +44,12 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String name) {
+        this.nome = name;
     }
 
     public String getCpf() {
