@@ -43,7 +43,29 @@ public class FuncionarioController {
         employeeRepo.delete(funcionarioDeletar);
         return "Funcionario deletado com sucesso!";
     }
+    /*
+    Usando cliente Thunder:
+    localhost:8080//employee
 
+    Vá para as abas "Body" e sub-aba "Json"
+    Body > Json
+  
+    Corpo para testes(Modelo):
+    {
+      "id": 1,
+      "name": "Rafael Vieira",
+      "cpf": "0123456789",
+      "identidade": "1111111",
+      "orgaoEmissor": "SDSPE",
+      "telefone": "55-81-99999-8888",
+      "dataNascimento": "01/04/1980",
+      "email": "rafaelvieira@google.com",
+      "matricula": 123,
+      "dataMatricula": "11/06/2022",
+      "funcao": "GERENTE"
+    }
+    funcao: RECEPCIONISTA CONSULTOR GERENTE DIRETOR
+    */
     
     
 }
