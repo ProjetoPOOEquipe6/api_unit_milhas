@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-@ResquestMapping(value="/function")
+import com.unit.unitMilhas.model.TipoFuncao;
+import com.unit.unitMilhas.repository.TipoFuncaoRepo;
 
+@RestController
+@RequestMapping(value="/function")
 public class TipoFuncaoController {
     @Autowired
     private TipoFuncaoRepo functionRepo;
