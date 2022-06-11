@@ -10,6 +10,11 @@ public class FuncionarioController {
 
     private FuncionarioRepo employeeRepo;
 
+    @GetMapping
+    public List<Funcionario> findAll(){
+        return employeeRepo.findAll();
+    }
+
     
     
 }
