@@ -6,7 +6,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Usuario {
-    private Long id;
+    protected Long id;
     //@NotBlank
     private String nome;
     private String cpf;
